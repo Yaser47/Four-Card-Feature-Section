@@ -1,120 +1,122 @@
 /* Start Variables  */
 :root {
-	--red-color: hsl(0, 78%, 62%);
-	--cyan-color: hsl(180, 62%, 55%);
-	--orange-color: hsl(34, 97%, 64%);
-	--blue-color: hsl(212, 86%, 64%);
-	--very-dark-blue-color: hsl(234, 12%, 34%);
-	--grayish-blue-color: hsl(229, 6%, 66%);
-	--very-light-gray: hsl(0, 0%, 98%);
-	--main-line-height: 1.6;
-	--main-padding-top: 60px;
-	--main-padding-bottom: 60px;
+  --red-color: hsl(0, 78%, 62%);
+  --cyan-color: hsl(180, 62%, 55%);
+  --orange-color: hsl(34, 97%, 64%);
+  --blue-color: hsl(212, 86%, 64%);
+  --very-dark-blue-color: hsl(234, 12%, 34%);
+  --grayish-blue-color: hsl(229, 6%, 66%);
+  --very-light-gray: hsl(0, 0%, 98%);
+  --main-line-height: 1.6;
+  --main-padding-top: 60px;
+  --main-padding-bottom: 60px;
 }
 /* End Variables  */
 /* Start Global Rules  */
 * {
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 body {
-	font-family: 'Poppins', sans-serif;
-	background-color: var(--very-light-gray);
+  font-family: "Poppins", sans-serif;
+  background-color: var(--very-light-gray);
 }
 .container {
-	margin-left: auto;
-	margin-right: auto;
-	padding-left: 15px;
-	padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 @media (min-width: 1200px) {
-	.container {
-		width: 1170px;
-	}
+  .container {
+    width: 1170px;
+  }
 }
 @media (max-width: 576px) {
-	.container {
-		width: 375px;
-	}
+  .container {
+    width: 375px;
+  }
 }
 /* End Global Rules  */
 /* Start Header  */
 header {
-	padding-top: var(--main-padding-top);
-	padding-left: 20px;
-	padding-right: 20px;
-	text-align: center;
+  padding-top: var(--main-padding-top);
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
 }
 header h2 {
-	font-size: 41px;
-	color: var(--very-dark-blue-color);
+  font-size: 41px;
+  color: var(--very-dark-blue-color);
 }
 header .first-heading {
-	margin: 0 0 10px;
-	font-weight: 200;
+  margin: 0 0 10px;
+  font-weight: 200;
 }
 header .second-heading {
-	margin: 10px 0 20px;
-	font-weight: 600;
+  margin: 10px 0 20px;
+  font-weight: 600;
 }
 header p {
-	font-size: 17px;
-	max-width: 570px;
-	margin: 0 auto;
-	color: var(--grayish-blue-color);
-	line-height: var(--main-line-height);
+  font-size: 17px;
+  max-width: 570px;
+  margin: 0 auto;
+  color: var(--grayish-blue-color);
+  line-height: var(--main-line-height);
 }
 @media (max-width: 576px) {
-	header h2 {
-		font-size: 28px;
-	}
+  header h2 {
+    font-size: 28px;
+  }
 }
 /* End Header  */
 
 .parent {
-	padding-top: var(--main-padding-top);
-	padding-bottom: var(--main-padding-bottom);
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
 }
 .parent .container {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-	gap: 30px;
-	align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  align-items: center;
 }
 .parent .box {
-	background-color: white;
-	padding: 20px;
-	height: fit-content;
-	box-shadow: 0 4px 12px rgb(0 0 0 / 10%);
-	border-radius: 6px;
-	border-top: 4px solid;
+  background-color: white;
+  padding: 20px;
+  height: fit-content;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 10%);
+  border-radius: 6px;
+  border-top: 4px solid;
 }
 .parent .box.cyan {
-	border-top-color: var(--cyan-color);
+  border-top-color: var(--cyan-color);
 }
 .parent .box.red {
-	border-top-color: var(--red-color);
-	margin-bottom: 30px;
+  border-top-color: var(--red-color);
+  margin-bottom: 30px;
 }
 .parent .box.orange {
-	border-top-color: var(--orange-color);
+  border-top-color: var(--orange-color);
 }
 .parent .box.blue {
-	border-top-color: var(--blue-color);
+  border-top-color: var(--blue-color);
 }
 .parent .box h3 {
-	margin: 0;
-	font-size: 23px;
+  margin: 0;
+  font-size: 23px;
+  font-weight: bold;
+  color: var(--blue-color);
 }
 .parent .box p {
-	font-size: 15px;
-	color: var(--grayish-blue-color);
-	margin-top: 15px;
-	margin-bottom: 40px;
-	line-height: var(--main-line-height);
+  font-size: 15px;
+  color: var(--grayish-blue-color);
+  margin-top: 15px;
+  margin-bottom: 40px;
+  line-height: var(--main-line-height);
 }
 .parent .box .image {
-	display: flex;
-	justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
