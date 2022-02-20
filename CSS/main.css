@@ -107,7 +107,7 @@ header p {
   margin: 0;
   font-size: 23px;
   font-weight: bold;
-  color: var(--blue-color);
+  color: var(--very-dark-blue-color);
 }
 .parent .box p {
   font-size: 15px;
