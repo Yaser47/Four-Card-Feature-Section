@@ -8,8 +8,8 @@
   --grayish-blue-color: hsl(229, 6%, 66%);
   --very-light-gray: hsl(0, 0%, 98%);
   --main-line-height: 1.6;
-  --main-padding-top: 60px;
-  --main-padding-bottom: 60px;
+  --main-padding-top: 75px;
+  --main-padding-bottom: 75px;
 }
 /* End Variables  */
 /* Start Global Rules  */
@@ -30,7 +30,7 @@ body {
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 1120px;
   }
 }
 @media (max-width: 576px) {
@@ -41,40 +41,38 @@ body {
 /* End Global Rules  */
 /* Start Header  */
 header {
-  padding-top: var(--main-padding-top);
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
   text-align: center;
+  max-width: 570px;
+  margin: 50px auto;
 }
-header h2 {
-  font-size: 41px;
-  color: var(--very-dark-blue-color);
-}
-header .first-heading {
-  margin: 0 0 10px;
+header h1 {
   font-weight: 200;
+  color: var(--very-dark-blue-color);
+  margin: 0;
+  font-size: 36px;
 }
-header .second-heading {
-  margin: 10px 0 20px;
+header h1 span {
   font-weight: 600;
+  display: block;
+  margin-top: 10px;
 }
 header p {
-  font-size: 17px;
-  max-width: 570px;
-  margin: 0 auto;
+  font-size: 15px;
+  margin: 20px auto;
   color: var(--grayish-blue-color);
   line-height: var(--main-line-height);
 }
 @media (max-width: 576px) {
-  header h2 {
-    font-size: 28px;
+  header h1 {
+    font-size: 27px;
   }
 }
 /* End Header  */
 
 .parent {
-  padding-top: var(--main-padding-top);
-  padding-bottom: var(--main-padding-bottom);
+  padding-bottom: 50px;
 }
 .parent .container {
   display: grid;
@@ -84,10 +82,10 @@ header p {
 }
 .parent .box {
   background-color: white;
-  padding: 20px;
+  padding: 30px;
   height: fit-content;
   box-shadow: 0 4px 12px rgb(0 0 0 / 10%);
-  border-radius: 6px;
+  border-radius: 5px;
   border-top: 4px solid;
 }
 .parent .box.cyan {
@@ -106,7 +104,7 @@ header p {
 .parent .box h3 {
   margin: 0;
   font-size: 23px;
-  font-weight: bold;
+  font-weight: 600;
   color: var(--very-dark-blue-color);
 }
 .parent .box p {
