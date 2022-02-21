@@ -114,7 +114,7 @@ header p {
   margin-bottom: 40px;
   line-height: var(--main-line-height);
 }
-.parent .box .image {
-  display: flex;
-  justify-content: flex-end;
+.parent .box img {
+  display: block;
+  margin-left: auto;
 }
