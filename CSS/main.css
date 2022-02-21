@@ -83,7 +83,6 @@ header p {
 .parent .box {
   background-color: white;
   padding: 30px;
-  height: fit-content;
   box-shadow: 0 4px 12px rgb(0 0 0 / 10%);
   border-radius: 5px;
   border-top: 4px solid;
